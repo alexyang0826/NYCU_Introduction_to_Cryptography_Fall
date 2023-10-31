@@ -41,3 +41,31 @@ B. CBC, IV=0000 0000 0000 0000, Zeros Padding
 → 4c 85 5d 63 17 60 8f 8d d3 94 61 e5 bc c9 40 b8
 C. ECB, PKCS padding → d5 23 32 6c 27 ee 0f 21 65 c7 69 6b 36 f2 68 8e
 
+## HW3
+**RSA encoding and decoding**
+This programming problem is to practice RSA encoding and decoding using Crypto++. We only deal with one-block 
+operation. You need to check whether the message length (in bits) is strictly shorter modulus n’s length.
+I. Read in the key length in decimal, a public key (e, n) in Hex and a message in ASCII and do encryption as 
+described in the following table. The first row is for testing and the rest is the problem. 
+The ASCII message is treated as an integer, for example, “Hi” = “4869” (Hex) = 18537 (decimal). Since we 
+are dealing with very long integer, use “Integer” class for integer operations.
+
+
+
+| Key length (decimal) |                         Public key=(e, n) (Hex)                          | Message (ASCII)    | Ciphertext (Hex) |
+|:--------------------:|:------------------------------------------------------------------------:| ------------------ | ----------------:|
+|          64          |                          (11, c963f963d93559ff)                          | ElGamal            | 6672e7d4a8786631 |
+|         128          |                  (11, 04823f9fe38141d93f1244be161b20f)                   | Hello World!       |                ? |
+|         256          | (10001,9711ea5183d50d6a91114f1d7574cd52621b35499b4d3563ec95406a994099c9) | RSA is public key. |                ? |
+          
+
+II. Read in key length in decimal, e and n in Hex and a ciphertext in Hex. Try to find the correct private key d by 
+searching thru possible keys as specified. Then, use the private to decrypt the ciphertext to a meaningful message.
+
+
+
+| Key length (decimal) |        Public key=(e, n) (Hex)         | Ciphertext (Hex)                  |                 Private key (Hex) | Message (ASCII) |
+|:--------------------:|:--------------------------------------:| --------------------------------- | ---------------------------------:|:---------------:|
+|          64          |          11, c45350fa19fa8d93          | ElGamal                           |                  6672e7d4a8786631 |     secrecy     |
+|         128          | 1d35, c4b361851de35f080d3ca7352cbf372d | a02d51d0e87efe1de fc19f3ee899c31d | 53a0a95b089cf23adb5cc73f07XXXXX ? |        ?        |
+
