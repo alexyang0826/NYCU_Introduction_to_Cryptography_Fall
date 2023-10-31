@@ -14,7 +14,7 @@ a 64-bit key (with parity bits).
 a. The source code file with name: des.cpp or des.c.
 b. The output file “des-out.txt” that contains 5 lines of plaintexts (in ASCII) for the ordered pairs 
 of key and ciphertext (one pair per line) from the file “DES-Key-Ciphertext.txt”.
-2
+
 **Use Crypto++ for AES**
 This part is to use the crypto library “Crypto++” to encode messages in various encryption and padding 
 modes. The purpose is to get familiar with AES function calls and parameter setting. Please find the 
