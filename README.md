@@ -69,3 +69,8 @@ searching thru possible keys as specified. Then, use the private to decrypt the 
 |          64          |          11, c45350fa19fa8d93          | ElGamal                           |                  6672e7d4a8786631 |     secrecy     |
 |         128          | 1d35, c4b361851de35f080d3ca7352cbf372d | a02d51d0e87efe1de fc19f3ee899c31d | 53a0a95b089cf23adb5cc73f07XXXXX ? |        ?        |
 
+## HW4
+**Mining**
+Find a blockchain of hash values of leading zeros from 0 to 7 or 8
+
+(b) If you exhaust all possible nonces (2^32) and cannot find a hash value of 8 leading zeros from the previous hash value of 7 leading zeros, you need to find another hash value of 7 leading zeros and search nonces  again.
