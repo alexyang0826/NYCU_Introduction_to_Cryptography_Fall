@@ -2,6 +2,7 @@
 
 ## HW2
 **DES Programming**
+
 This part is to implement DES core function, which encrypts a 64-bit plaintext to a 64-bit ciphertext with 
 a 64-bit key (with parity bits).
 1. Input format: the input is an ordered pair of keys and plaintexts in ASCII characters, such as, ‘a’ 
@@ -16,6 +17,7 @@ b. The output file “des-out.txt” that contains 5 lines of plaintexts (in ASC
 of key and ciphertext (one pair per line) from the file “DES-Key-Ciphertext.txt”.
 
 **Use Crypto++ for AES**
+
 This part is to use the crypto library “Crypto++” to encode messages in various encryption and padding 
 modes. The purpose is to get familiar with AES function calls and parameter setting. Please find the 
 related library and programming environment (e.g. Visual Studio) information on the Internet.
