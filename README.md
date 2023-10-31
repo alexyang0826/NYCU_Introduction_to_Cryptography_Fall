@@ -22,7 +22,7 @@ This part is to use the crypto library “Crypto++” to encode messages in vari
 modes. The purpose is to get familiar with AES function calls and parameter setting. Please find the 
 related library and programming environment (e.g. Visual Studio) information on the Internet.
 
-I. Encrypt the following 36-byte message (in ASCII, quotes are not included.) 
+1. Encrypt the following 36-byte message (in ASCII, quotes are not included.) 
 
 “AES is the US block cipher standard.”
 by the key “keyis84932731830” (ASCII) and the following specifications.
@@ -34,7 +34,7 @@ CBC 0000 0000 0000 0000 (ASCII) Hex Zeros Padding
 CBC 9999 9999 9999 9999 (ASCII) Hex PKCS#7
 ECB - Hex PKCS#7
 
-II. Test data: Plaintext = “Hello World!” (ASCII) and key=“1234567890ABCDEF” (ASCII) .
+2. Test data: Plaintext = “Hello World!” (ASCII) and key=“1234567890ABCDEF” (ASCII) .
 
 A. CFB, IV=0000 0000 0000 0000, block size=4 bytes → 36 db 74 5b 3b 6d a6 9a bf 5f eb 23
 B. CBC, IV=0000 0000 0000 0000, Zeros Padding
